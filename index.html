@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malik Akbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="h-100 w-100" style="
+				box-sizing: border-box;
+				position: relative;
+				background-color: #FAFCFF;
+			">
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+            .header-3-3 .modal-backdrop.show {
+                background-color: #000;
+                opacity: 0.6;
+            }
+            
+            .header-3-3 .modal-item.modal {
+                top: 2rem;
+            }
+            
+            .header-3-3 .navbar {
+                padding: 2rem 2rem;
+            }
+            
+            .header-3-3 .navbar-light .navbar-nav .nav-link {
+                font: 300 0.875rem/1.5rem Poppins, sans-serif;
+                color: #8B9CAF;
+                padding: 0rem 1.25rem 0rem 0rem;
+                margin-right: 0;
+                margin-left: 0;
+            }
+            
+            .header-3-3 .navbar-light .navbar-nav .nav-link:hover {
+                font: 500 0.875rem/1.5rem Poppins, sans-serif;
+                color: #243142;
+            }
+            
+            .header-3-3 .navbar-light .navbar-nav .active {
+                position: relative;
+                width: fit-content;
+            }
+            
+            .header-3-3 .navbar-light .navbar-nav .active>.nav-link,
+            .header-3-3 .navbar-light .navbar-nav .nav-link.active,
+            .header-3-3 .navbar-light .navbar-nav .nav-link.show,
+            .header-3-3 .navbar-light .navbar-nav .show>.nav-link {
+                font-weight: 500;
+            }
+            
+            .header-3-3 .navbar-light .navbar-toggler-icon {
+                background-image: urlurl("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            }
+            
+            .header-3-3 .btn:focus,
+            .header-3-3 .btn:active {
+                outline: none !important;
+            }
+            
+            .header-3-3 .btn-fill {
+                font: 500 0.875rem/1.25rem Poppins, sans-serif;
+                border: 1px solid #4E91F9;
+                background-color: #4E91F9;
+                border-radius: 999px;
+                padding: 0.75rem 1.5rem;
+                transition: 0.3s;
+            }
+            
+            .header-3-3 .btn-fill:hover {
+                background-color: #6DA4F9;
+                border: 1px solid #6DA4F9;
+            }
+            
+            .header-3-3 .btn-no-fill {
+                font: 500 0.875rem/1.25rem Poppins, sans-serif;
+                color: #8B9CAF;
+                padding: 0.75rem 2rem;
+            }
+            
+            .header-3-3 .btn-no-fill:hover {
+                color: #243142;
+            }
+            
+            .header-3-3 .modal-item .modal-dialog .modal-content {
+                border-radius: 8px;
+            }
+            
+            .header-3-3 .responsive li {
+                padding: 1rem;
+            }
+            
+            .header-3-3 .hr {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+            
+            .header-3-3 .hero {
+                padding: 4rem 2rem;
+            }
+            
+            .header-3-3 .left-column {
+                margin-bottom: 0.75rem;
+                width: 100%;
+            }
+            
+            .header-3-3 .title-text-big {
+                font: 600 2.25rem / normal Poppins, sans-serif;
+                margin-bottom: 1.25rem;
+                color: #243142;
+            }
+            
+            span.title {
+                font: 600 1.5rem / normal Poppins, sans-serif;
+                margin-bottom: 1rem;
+            }
+            
+            .header-3-3 .text-caption {
+                font: 300 1rem/1.5rem Poppins, sans-serif;
+                letter-spacing: 0.025em;
+                color: #8B9CAF;
+                margin-bottom: 2rem;
+            }
+            
+            .header-3-3 .btn-get {
+                font: 600 1rem/1.5rem Poppins, sans-serif;
+                padding: 1rem 2rem;
+                border-radius: 999px;
+                border: 1px solid #4E91F9;
+                background-color: #4E91F9;
+                transition: 0.3s;
+            }
+            
+            .header-3-3 .btn-get:hover {
+                background-color: #6DA4F9;
+                border: 1px solid #6DA4F9;
+            }
+            
+            .header-3-3 .btn-outline {
+                font: 400 1rem/1.5rem Poppins, sans-serif;
+                padding: 1rem 1.5rem;
+                border-radius: 999px;
+                background-color: transparent;
+                border: 1px solid #A6B1BE;
+                color: #A6B1BE;
+                transition: 0.3s;
+            }
+            
+            .header-3-3 .btn-outline:hover {
+                border: 1px solid #6DA4F9;
+                color: #6DA4F9;
+            }
+            
+            .header-3-3 .btn-outline:hover div path {
+                fill: #6DA4F9;
+            }
+            
+            .header-3-3 .btn-outline:hover div rect {
+                stroke: #6DA4F9;
+            }
+            
+            .header-3-3 .right-column {
+                width: 100%;
+            }
+            
+            .header-3-3 .hero-right {
+                right: 2rem;
+                bottom: 0;
+            }
+            
+            .header-3-3 .card-outer {
+                padding-left: 0;
+                z-index: 1;
+            }
+            
+            .header-3-3 .card {
+                transition: 0.4s;
+                top: 0px;
+                left: 0px;
+                background-color: #FFFFFF;
+                padding: 1.25rem;
+                border-radius: 0.75rem;
+                width: 100%;
+                margin-top: 2.5rem;
+                box-shadow: -4px 4px 10px 0px rgba(224, 224, 224, 0.25);
+            }
+            
+            .header-3-3 .card:hover {
+                top: -3px;
+                left: -3px;
+                transition: 0.4s;
+                box-shadow: -4px 8px 15px 0px rgba(167, 167, 167, 0.25);
+            }
+            
+            .header-3-3 .card-name {
+                font: 600 1rem/1.5rem Poppins, sans-serif;
+                margin-bottom: 0.25rem;
+            }
+            
+            .header-3-3 .card-job {
+                font: 300 0.75rem/1rem Poppins, sans-serif;
+                color: #aaa6a6;
+                margin-bottom: 0;
+            }
+            
+            .header-3-3 .card-price-left {
+                font: 500 1rem/1.5rem Poppins, sans-serif;
+                margin-bottom: 0.125rem;
+                color: #1B8171;
+            }
+            
+            .header-3-3 .card-caption {
+                font: 300 0.75rem/1rem Poppins, sans-serif;
+                color: #aaa6a6;
+                margin-bottom: 0;
+            }
+            
+            .header-3-3 .card-price-right {
+                font: 500 1rem/1.5rem Poppins, sans-serif;
+                margin-bottom: 0.125rem;
+                color: #FF7468;
+            }
+            
+            .header-3-3 .btn-hire {
+                font: 600 1rem/1.5rem Poppins, sans-serif;
+                padding: 0.75rem 4rem;
+                border-radius: 0.75rem;
+                margin-bottom: 0.125rem;
+                border: 1px solid #4E91F9;
+                background-color: #4E91F9;
+                transition: 0.3s;
+            }
+            
+            .header-3-3 .btn-hire:hover {
+                background-color: #6DA4F9;
+                border: 1px solid #6DA4F9;
+            }
+            
+            .header-3-3 .form {
+                border-radius: 999px;
+                background-color: #eef4fd;
+                box-sizing: border-box;
+                font-size: 14px;
+                padding: 0rem 1rem;
+                padding-right: 0.5rem;
+                outline: none;
+            }
+            
+            .header-3-3 .form div input[type="text"] {
+                background-color: #eef4fd;
+                box-sizing: border-box;
+                font-size: 14px;
+                padding: 0rem 0.5rem;
+                outline: none;
+                width: 100%;
+            }
+            
+            .header-3-3 .center-search {
+                bottom: 0.5rem;
+            }
+            
+            @media (min-width: 576px) {
+                .header-3-3 .modal-item .modal-dialog {
+                    max-width: 95%;
+                    border-radius: 12px;
+                }
+                .header-3-3 .navbar {
+                    padding: 2rem;
+                }
+                .header-3-3 .title-text-big {
+                    font-size: 3rem;
+                    line-height: 1.2;
+                }
+            }
+            
+            @media (min-width: 768px) {
+                .header-3-3 .navbar {
+                    padding: 2rem 4rem;
+                }
+                .header-3-3 .hr {
+                    padding-left: 4rem;
+                    padding-right: 4rem;
+                }
+                .header-3-3 .hero {
+                    padding: 4rem;
+                }
+                .header-3-3 .left-column {
+                    margin-bottom: 3rem;
+                }
+                .header-3-3 .hero-right {
+                    right: 4rem;
+                    width: 420px;
+                }
+                .header-3-3 .card {
+                    margin-left: auto;
+                    margin-top: 0;
+                }
+            }
+            
+            @media (min-width: 992px) {
+                .header-3-3 .navbar-light .navbar-nav .active:before {
+                    content: "";
+                    position: absolute;
+                    margin-left: auto;
+                    margin-right: auto;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    bottom: 0;
+                    height: 0px;
+                    width: 80%;
+                    /* or 100px */
+                    border-bottom: 2px solid #4E91F9;
+                }
+                .header-3-3 .navbar {
+                    padding: 2rem 6rem;
+                }
+                .header-3-3 .navbar-light .navbar-nav .nav-link {
+                    padding: 0;
+                    margin-right: 1rem;
+                    margin-left: 1rem;
+                }
+                .header-3-3 .navbar-light .navbar-nav .active:before {
+                    width: 40%;
+                }
+                .header-3-3 .hr {
+                    padding-left: 6rem;
+                    padding-right: 6rem;
+                }
+                .header-3-3 .hero {
+                    padding: 4rem 6rem 5rem;
+                }
+                .header-3-3 .left-column {
+                    width: 50%;
+                    margin-bottom: 0;
+                }
+                .header-3-3 .title-text-big {
+                    font-size: 3.75rem;
+                    line-height: 1.25;
+                }
+                .header-3-3 .right-column {
+                    width: 50%;
+                }
+                .header-3-3 .hero-right {
+                    right: 6rem;
+                }
+                .header-3-3 .card-outer {
+                    padding-left: 4rem;
+                }
+                .header-3-3 .center-search {
+                    left: 48%;
+                    top: 50%;
+                    bottom: auto;
+                    transform: translate(-48%, -50%);
+                }
+                .header-3-3 .form {
+                    width: 340px;
+                }
+            }
+            
+            @media (max-width: 1023px) {
+                .header-3-3 .form div input[type="text"] {
+                    width: 100%;
+                }
+                body .left-circle img {
+                    display: none;
+                }
+            }
+        </style>
+        <div class="header-3-3 container-xxl mx-auto p-0 position-relative" style="font-family: 'Poppins', sans-serif">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="#">
+                    <img style="margin-right: 0.75rem" src="asset/logo (2).svg" alt="" />
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-item">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <div class="modal-item modal fade" id="targetModal-item" tabindex="-1" role="dialog" aria-labelledby="targetModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content bg-white border-0">
+                            <div class="modal-header border-0" style="padding: 2rem; padding-bottom: 0">
+                                <a class="modal-title" id="targetModalLabel">
+                                    <img style="margin-top: 0.5rem" src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header3/Header-3-6.png" alt="" />
+                                </a>
+                                <button type="button" class="close btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body" style="padding: 2rem; padding-top: 0; padding-bottom: 0">
+                                <ul class="navbar-nav responsive me-auto mt-2 mt-lg-0">
+                                    <li class="nav-item active position-relative">
+                                        <a class="nav-link main" style="color: #243142;" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item position-relative">
+                                        <a class="nav-link" href="#">Experience</a>
+                                    </li>
+                                    <li class="nav-item position-relative">
+                                        <a class="nav-link" href="#">About</a>
+                                    </li>
+                                    <li class="nav-item position-relative">
+                                        <a class="nav-link" href="#">Quotes</a>
+                                    </li>
+                                    <li class="nav-item position-relative">
+                                        <a class="nav-link" data-bs-toggle="collapse" href="#collapse" role="button" aria-expanded="false" aria-controls="collapse">
+                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M5.85 1.69346C3.5304 1.69346 1.65 3.57386 1.65 5.89346C1.65 8.21305 3.5304 10.0935 5.85 10.0935C8.1696 10.0935 10.05 8.21305 10.05 5.89346C10.05 3.57386 8.1696 1.69346 5.85 1.69346ZM0.25 5.89346C0.25 2.80066 2.75721 0.293457 5.85 0.293457C8.94279 0.293457 11.45 2.80066 11.45 5.89346C11.45 8.98625 8.94279 11.4935 5.85 11.4935C2.75721 11.4935 0.25 8.98625 0.25 5.89346Z"
+                          fill="#8B9CAF" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M8.85503 8.89848C9.12839 8.62512 9.57161 8.62512 9.84497 8.89848L14.045 13.0985C14.3183 13.3718 14.3183 13.8151 14.045 14.0884C13.7716 14.3618 13.3284 14.3618 13.055 14.0884L8.85503 9.88843C8.58166 9.61506 8.58166 9.17185 8.85503 8.89848Z"
+                          fill="#8B9CAF" />
+                      </svg>
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer border-0" style="padding: 2rem; padding-top: 0.75rem">
+                                <button class="btn btn-default btn-no-fill">Sign In</button>
+                                <button class="btn btn-fill text-white">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo">
+                    <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                        <li class="nav-item active position-relative">
+                            <a class="nav-link main=" style="color: #243142;" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link" href="#experience">Experiences</a>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link" href="#quotes">Quotes</a>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link" href="#testimonial">Testimonial</a>
+                        </li>
+
+                    </ul>
+                    <div style="visibility: hidden;">
+                        <button class="btn btn-default btn-no-fill">Sign In</button>
+                        <button class="btn btn-fill text-white">Register</button>
+                    </div>
+                </div>
+            </nav>
+            <div class="hr">
+                <hr style="
+							border-color: #F4F4F4;
+							background-color: #F4F4F4;
+							opacity: 1;
+							margin: 0 !important;
+						" />
+            </div>
+
+            <div>
+                <div class="mx-auto d-flex flex-lg-row flex-column hero" id="home">
+                    <!-- Left Column -->
+                    <div class="left-column flex-lg-grow-1 d-flex flex-column align-items-lg-start text-lg-start align-items-center text-center">
+                        <h1 class="title-text-big">
+                            Malik Akbar<br class="d-lg-block d-none" />
+                        </h1>
+                        <span class="title" style="color: #4E91F9">Sr. Product Manager</span>
+                        <p class="text-caption">
+                            Product management professionals with interest in education, data science, and social impact.
+                        </p>
+                        <div class="d-flex flex-sm-row flex-column align-items-center mx-auto mx-lg-0 justify-content-center gap-3">
+                            <button class="btn btn-get text-white d-inline-flex">
+                Contact Me
+              </button>
+
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="right-column d-flex justify-content-center justify-content-lg-start text-center pe-0">
+                        <img class="position-absolute d-lg-block d-none hero-right" src="asset/hero (2).png" alt="" />
+                        <div class="d-flex align-items-end card-outer">
+                            <div class="mx-auto d-flex flex-wrap align-items-center">
+                                <div class="card border-0 position-relative d-flex flex-column">
+                                    <div class="d-flex align-items-center" style="margin-bottom: 1.25rem">
+                                        <div>
+                                            <img style="margin-right: 1rem; width: 3rem;" src="asset/image 4.png" alt="" />
+                                        </div>
+                                        <div class="text-start">
+                                            <p class="card-name">Malik Akbar</p>
+                                            <p class="card-job">Sr. Product Manager</p>
+                                        </div>
+                                    </div>
+                                    <div class="row text-start" style="margin-bottom: 1.25rem">
+                                        <div class="col-6">
+                                            <p class="card-price-left">64,100</p>
+                                            <p class="card-caption">Followers</p>
+                                        </div>
+                                        <div class="col-6 ps-0">
+                                            <p class="card-price-right">106</p>
+                                            <p class="card-caption">Reviews</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="h-100 w-100" style="box-sizing: border-box; background-color: #141432; ">
+        <style scoped>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+            .content-2-3 .btn:focus,
+            .content-2-3 .btn:active {
+                outline: none !important;
+            }
+            
+            .content-2-3 .title-text {
+                padding-top: 5rem;
+                margin-bottom: 3rem;
+            }
+            
+            .content-2-3 .text-title {
+                font: 600 2.25rem/2.5rem Poppins, sans-serif;
+                margin-bottom: 0.625rem;
+            }
+            
+            .content-2-3 .text-caption {
+                color: #707092;
+                font-weight: 300;
+            }
+            
+            .content-2-3 .column {
+                padding: 2rem 2.25rem;
+            }
+            
+            .content-2-3 .icon {
+                margin-bottom: 1.5rem;
+            }
+            
+            .content-2-3 .icon-title {
+                font: 500 1.5rem/2rem Poppins, sans-serif;
+                margin-bottom: 0.625rem;
+            }
+            
+            .content-2-3 .icon-caption {
+                font: 400 1rem/1.625 Poppins, sans-serif;
+                letter-spacing: 0.025em;
+                color: #fff;
+            }
+            
+            .icon-caption {
+                margin-bottom: 0.5rem;
+            }
+            
+            .icon img {
+                border-radius: 50%;
+                width: 64px;
+            }
+            
+            p.date {
+                color: #fff;
+                opacity: 0.5;
+                margin: 0;
+            }
+            
+            .content-2-3 .card {
+                padding: 1.75rem;
+                background-color: #292952;
+                border-radius: 0.75rem;
+                border: 1px solid #4c4c6d;
+            }
+            
+            .content-2-3 .card-block {
+                padding: 1rem 1rem 5rem;
+            }
+            
+            .content-2-3 .card-title {
+                font: 600 1.5rem/2rem Poppins, sans-serif;
+                margin-bottom: 0.625rem;
+            }
+            
+            .content-2-3 .card-caption {
+                font: 300 1rem/1.5rem Poppins, sans-serif;
+                color: #707092;
+                letter-spacing: 0.025em;
+                margin-bottom: 0;
+            }
+            
+            .content-2-3 .btn-card {
+                font: 700 1rem/1.5rem Poppins, sans-serif;
+                background-color: #524eee;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                width: 100%;
+                border-radius: 0.75rem;
+                margin-bottom: 1.25rem;
+                border: none;
+            }
+            
+            .content-2-3 .btn-card:hover {
+                --tw-shadow: inset 0 0px 25px 0 rgba(20, 20, 50, 0.7);
+                box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            }
+            
+            .content-2-3 .btn-outline {
+                font: 400 1rem/1.5rem Poppins, sans-serif;
+                color: #57578e;
+                border: 1px solid #57578e;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                width: 100%;
+                border-radius: 0.75rem;
+            }
+            
+            .content-2-3 .btn-outline:hover {
+                border: 1px solid #ffffff;
+                color: #ffffff;
+            }
+            
+            .content-2-3 .card-text {
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+            }
+            
+            .content-2-3 .grid-padding {
+                padding: 0rem 1rem 3rem;
+            }
+            
+            @media (min-width: 576px) {
+                .content-2-3 .grid-padding {
+                    padding: 0rem 2rem 3rem;
+                }
+                .content-2-3 .card-block {
+                    padding: 3rem 2rem 5rem;
+                }
+            }
+            
+            @media (min-width: 768px) {
+                .content-2-3 .grid-padding {
+                    padding: 0rem 4rem 3rem;
+                }
+                .content-2-3 .card-block {
+                    padding: 3rem 4rem 5rem;
+                }
+            }
+            
+            @media (min-width: 992px) {
+                .content-2-3 .grid-padding {
+                    padding: 1rem 6rem 3rem;
+                }
+                .content-2-3 .card-block {
+                    padding: 3rem 6rem 5rem;
+                }
+                .content-2-3 .column {
+                    padding: 0rem 2.25rem;
+                }
+            }
+            
+            @media (min-width: 1200px) {
+                .content-2-3 .grid-padding {
+                    padding: 1rem 10rem 3rem;
+                }
+                .content-2-3 .card-block {
+                    padding: 3rem 6rem 5rem;
+                }
+                .content-2-3 .card-btn-space {
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+                .content-2-3 .btn-outline,
+                .content-2-3 .btn-card {
+                    width: 95%;
+                    float: right;
+                }
+            }
+            
+            @media (max-width: 980px) {
+                .content-2-3 .card-btn-space {
+                    width: 100%;
+                }
+            }
+        </style>
+        <div class="content-2-3 container-xxl mx-auto p-0  position-relative" id="experience" style="font-family: 'Poppins', sans-serif">
+            <div class="text-center title-text">
+                <h1 class="text-title text-white">Experiences</h1>
+                <p class="text-caption" style="margin-left: 3rem; margin-right: 3rem">
+                    Malik's Experiences
+                </p>
+            </div>
+
+            <div class="grid-padding text-center">
+                <div class="row">
+                    <div class="col-lg-4 column">
+                        <div class="icon">
+                            <img src="asset/image 5.png" alt="" />
+                        </div>
+                        <h3 class="icon-title text-white">Sr. Product Manager</h3>
+                        <p class="icon-caption">
+                            Ruangguru
+                        </p>
+                        <p class="date">
+                            (Nov 2020 - Jul 2022)
+                        </p>
+
+                    </div>
+                    <div class="col-lg-4 column">
+                        <div class="icon">
+                            <img src="asset/image 6.png" alt="" />
+                        </div>
+                        <h3 class="icon-title text-white">Product Lead</h3>
+                        <p class="icon-caption">
+                            Hacktiv8 Indonesia
+                        </p>
+                        <p class="date">
+                            (Sept 2019 - Nov 2020)
+                        </p>
+                    </div>
+                    <div class="col-lg-4 column">
+                        <div class="icon">
+                            <img src="asset/image 7.png" alt="" />
+                        </div>
+                        <h3 class="icon-title text-white">Product Manager</h3>
+                        <p class="icon-caption">
+                            Mapan
+                        </p>
+                        <p class="date">
+                            (Oct 2017 - Sept 2019)
+                        </p>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-lg-4 column">
+                        <div class="icon">
+                            <img src="asset/image 8.png" alt="" />
+                        </div>
+                        <h3 class="icon-title text-white">Product Manager</h3>
+                        <p class="icon-caption">
+                            Dattabot
+                        </p>
+                        <p class="date">
+                            (Nov 2016 - Oct 2017)
+                        </p>
+
+                    </div>
+                    <div class="col-lg-4 column">
+                        <div class="icon">
+                            <img src="asset/image 9.png" alt="" />
+                        </div>
+                        <h3 class="icon-title text-white">Management Associate</h3>
+                        <p class="icon-caption">
+                            Milvik Bima
+                        </p>
+                        <p class="date">
+                            (2016)
+                        </p>
+                    </div>
+                    <div class="col-lg-4 column">
+                        <div class="icon">
+                            <img src="asset/image 10.png" alt="" />
+                        </div>
+                        <h3 class="icon-title text-white">
+                            Co-founder and CEO</h3>
+                        <p class="icon-caption">
+                            Adhmora
+                        </p>
+                        <p class="date">
+                            (2013 - 2015)
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-block" id="about">
+                <div class="card">
+                    <div class="d-flex flex-lg-row flex-column align-items-center">
+                        <div class="me-lg-3">
+                            <img src="asset/malik-2.png" alt="" />
+                        </div>
+                        <div class="flex-grow-1 text-lg-start text-center card-text">
+                            <h3 class="card-title text-white">
+                                About Me
+                            </h3>
+                            <p class="card-caption">
+                                Product management professionals with interest in education,<br> data science, and social impact.
+                            </p>
+                        </div>
+                        <div class="card-btn-space">
+                            <button class="btn btn-card text-white">Contact Me</button>
+                            <button class="btn btn-outline">Resume</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="client position-relative">
+        <style scoped>
+            * {
+                font-family: 'Poppins', 'Inter', sans-serif !important;
+            }
+            
+            body .left-circle img {
+                z-index: 0;
+                margin-top: -350px;
+                position: absolute;
+                left: 0;
+            }
+            
+            body .client {
+                background-color: #000909;
+                padding: 50px 30px;
+            }
+            
+            @media only screen and (min-width: 768px) {
+                body .client {
+                    padding-top: 140px;
+                    padding-bottom: 100px;
+                }
+            }
+            
+            body .client h1 {
+                font-weight: 700;
+                font-size: 30px;
+                color: #EEEEEE;
+                z-index: 1;
+            }
+            
+            @media only screen and (min-width: 768px) {
+                body .client h1 {
+                    font-size: 48px !important;
+                }
+            }
+            
+            body .client .merriweather {
+                font-family: 'Times New Roman', Times, serif !important;
+                font-weight: 700;
+                font-size: 20px;
+                color: white;
+                width: 100% !important;
+                z-index: 1;
+            }
+            
+            body .client .review {
+                color: #EEEEEE;
+                line-height: 150%;
+                font-weight: 400;
+                font-size: 20px;
+                text-align: justify;
+                z-index: 1;
+            }
+            
+            body .client h5 {
+                font-weight: 600;
+                font-size: 28px;
+                color: #EEEEEE;
+                z-index: 1;
+            }
+            
+            body .client .company {
+                font-weight: 400;
+                font-size: 20px;
+                color: #666666;
+                z-index: 1;
+            }
+            
+            body .client .client-img img {
+                width: 108px;
+                height: 60px;
+                z-index: 1;
+            }
+            
+            @media only screen and (min-width: 768px) {
+                body .client .review-section {
+                    padding-top: 116px;
+                }
+            }
+            
+            body .cl-light {
+                color: #EEEEEE;
+            }
+            
+            body .cl-light-grey-2 {
+                color: #90BCB7;
+            }
+            
+            body .font-lora {
+                font-family: 'Lora', sans-serif !important;
+            }
+        </style>
+        <div class="left-circle">
+            <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-workly/Left-Circle.png" alt="circle">
+
+        </div>
+        <div class="container-fluid position-relative" id="quotes">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center">
+                        Quotes by Malik
+                    </h1>
+                </div>
+            </div>
+
+        </div>
+        <div class="container review-section">
+            <div class="row">
+                <div class="col-md-5 px-5 mt-4 mt-md-0">
+                    <img src="asset/malik-3 (2).png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-7 mt-4 mt-md-0">
+                    <div class="text-end">
+                        <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-workly/petik.png" alt="mark" class="img-fluid">
+                    </div>
+                    <p class="review">
+                        "Mau jadi bapak2 yg suka share2 article di pagi hari ah"
+                    </p>
+                    <h5 class="mt-5">
+                        Malik Akbar
+                    </h5>
+                    <p class="company">
+                        Senior Product Manager
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- START: PRODUCTS -->
+    <section class="products position-relative overflow-hidden">
+        <style scoped>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+            * {
+                font-family: 'Poppins', 'Inter', sans-serif !important;
+            }
+            
+            body .right-circle img {
+                z-index: 0;
+                margin-top: -250px;
+                position: absolute;
+            }
+            
+            body .porto {
+                background-color: #FAFCFF;
+                padding: 50px 30px;
+            }
+            
+            @media only screen and (min-width: 768px) {
+                body .porto {
+                    padding-top: 140px;
+                    padding-bottom: 100px;
+                }
+            }
+            
+            body .porto .headline {
+                font-size: 40px;
+                font-weight: 600;
+                color: #243142;
+                z-index: 1;
+            }
+            
+            body .porto .link {
+                font-size: 24px;
+                font-weight: 600;
+                color: #EEEEEE;
+                z-index: 1;
+            }
+            
+            body .porto .sub-headline {
+                padding-top: 28px;
+                font-size: 16px;
+                font-weight: 400;
+                color: #888888;
+                z-index: 1;
+            }
+            
+            @media only screen and (min-width: 768px) {
+                body .porto .sub-headline {
+                    font-size: 24px;
+                }
+            }
+            
+            body .porto .porto-img {
+                margin-top: 45px;
+            }
+            
+            body .porto .porto-img div {
+                z-index: 1;
+            }
+            
+            @media only screen and (min-width: 768px) {
+                body .porto .porto-img {
+                    margin-top: 96px;
+                }
+            }
+            
+            body .porto .porto-img-full {
+                z-index: 1;
+            }
+            
+            @media only screen and (max-width: 768px) {
+                body .porto .porto-img-full {
+                    width: 100px !important;
+                }
+            }
+            
+            body .porto .porto-img-half {
+                z-index: 1;
+            }
+            
+            @media only screen and (max-width: 768px) {
+                body .porto .porto-img-half {
+                    height: 70px !important;
+                }
+            }
+            
+            body .cl-light {
+                color: #EEEEEE;
+            }
+            
+            body .cl-light-grey-2 {
+                color: #90BCB7;
+            }
+            
+            body .font-lora {
+                font-family: 'Lora', sans-serif !important;
+            }
+        </style>
+        <section class="right-circle">
+            <div class="d-flex justify-content-end">
+                <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-workly/Right-Circle.png" alt="circle" />
+            </div>
+        </section>
+
+        <section class="porto" id="gallery">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-12 text-center">
+                    <h4 class="headline">
+                        Gallery
+                    </h4>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="sub-headline">
+                        All about Malik
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center gap-4 porto-img">
+                <div>
+                    <img src="asset/porto-1.png" class="img-fluid" />
+                </div>
+                <div class="d-flex flex-column gap-3">
+                    <img src="asset/porto-2.png" class="img-fluid">
+                    <img src="asset/porto-3.png" class="img-fluid mt-auto" />
+                </div>
+                <div>
+                    <img src="asset/porto-4.png" class="img-fluid" />
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- END: PRODUCTS -->
+    <section class="best-user-reviewss">
+        <style scoped>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+            * {
+                font-family: 'Inter', sans-serif !important;
+            }
+            
+            body .img-best-user-reviewss {
+                z-index: -1 !important;
+                right: 0 !important;
+                position: absolute;
+                margin-top: 92px;
+                margin-right: 68px;
+            }
+            
+            body .best-user-reviewss {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+            
+            body .best-user-reviewss h1 {
+                color: #232323;
+                font-weight: 700 !important;
+            }
+            
+            .best-user-reviewss .star-img-rating {
+                width: 24px !important;
+                height: 24px;
+                object-fit: cover;
+            }
+            
+            @media screen and (min-width: 768px) {
+                body .best-user-reviewss {
+                    padding-bottom: 188px;
+                }
+                body .best-user-reviewss h1 {
+                    font-size: 60px !important;
+                }
+            }
+            
+            @media screen and (min-width: 768px) {
+                body .best-user-reviewss .container {
+                    padding-top: 120px;
+                }
+                body .best-user-reviewss .container h1 {
+                    width: 722px;
+                    font-size: 60px;
+                    line-height: 90px !important;
+                }
+            }
+            
+            body .best-user-reviewss .container h1 {
+                line-height: 50px;
+                font-weight: 700 !important;
+            }
+            
+            body .best-user-reviewss .container .testi-text {
+                line-height: 28px;
+                color: #9C9C9C;
+            }
+            
+            @media screen and (min-width: 768px) {
+                body .best-user-reviewss .container .testi-text {
+                    width: 500px;
+                }
+            }
+            
+            body .best-user-reviewss .container .card {
+                border-radius: 28px;
+                border: none !important;
+                -webkit-box-shadow: 20px 8px 18px rgba(178, 177, 255, 0.05);
+                box-shadow: 20px 8px 18px rgba(178, 177, 255, 0.05);
+            }
+            
+            body .best-user-reviewss .container .card p {
+                color: #9C9C9C;
+            }
+            
+            body .cl-black {
+                color: black !important;
+            }
+            
+            body .cl-orange {
+                color: #FF9900;
+            }
+            
+            body .cl-dusty-grey {
+                color: #9C9C9C;
+            }
+            
+            body .place .img-place-header {
+                width: 100% !important;
+            }
+            
+            .btn-get {
+                font: 700 1rem/1.5rem Poppins, sans-serif;
+                background-color: #524eee;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                width: fit-content;
+                border-radius: 0.75rem;
+                margin-bottom: 1.25rem;
+                border: none;
+            }
+        </style>
+        <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/testimonial-photo-bg.png" alt="bg-best-user-reviewss" class="img-best-user-reviewss d-none d-md-block">
+        <div class="container px-3" id="testimonial">
+            <h1>
+                Here is what Malik's friends are saying
+            </h1>
+            <div class="row mt-5">
+                <div class="col-md-6 p-0">
+                    <div class="d-flex align-items-center mx-1 mb-4">
+                        <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/star-yellow.svg" alt="star" class="me-2 star-img-rating">
+                        <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/star-yellow.svg" alt="star" class="me-2 star-img-rating">
+                        <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/star-yellow.svg" alt="star" class="me-2 star-img-rating">
+                        <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/star-yellow.svg" alt="star" class="me-2 star-img-rating">
+                        <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/star-yellow.svg" alt="star" class="me-2 star-img-rating">
+                    </div>
+                    <p class="testi-text pb-md-4 px-3">
+                        “<b>Muda, berani, pantang menyerah!
+                          Muda, berani, pantang menyerah!</b><br> 3 poin subject di atas + foto ini sepertinya cukup menggambarkan personality Kaka Malique di mata kami. It is trully a privilege to have a brilliant leader like you, Kak. Thank you for
+                        everything ✨ Best of luck on the new chapter of your career!”
+                    </p>
+
+                    <div class="row my-5 ps-3 mx-0">
+                        <div class="col-2 px-0">
+                            <img src="asset/sisca.png" alt="testi-user" class="img-fluid">
+                        </div>
+                        <div class="col-10 ps-4 my-auto">
+                            <h3 class="font-weight-bold">
+                                Sisca Carla
+                            </h3>
+                            <p class="m-0 font-weight-semi-bold cl-dusty-grey">
+                                UX Writer
+                            </p>
+                        </div>
+                    </div>
+                    <button class="btn btn-get text-white d-inline-flex">
+                      <a href="https://padlet.com/teamsrg12/malikgraduation" style="color: #fff; text-decoration: none;"target="_blank">
+                        View more about Malik</a>
+                    </button>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-4" style="width: 20.25rem;">
+                        <img src="asset/malik-4.png" alt="img-place" class="img-fluid img-place-header">
+                        <h3 class="mt-4 font-weight-bold">
+                            Malik Akbar
+                        </h3>
+                        <p class="mb-5">
+                            Senior Product Manager
+                        </p>
+                        <div class="row">
+                            <div class="col-8">
+                                <p class="cl-black">
+                                    Rating
+                                </p>
+                            </div>
+                            <div class="col-4 cl-orange text-end">
+                                <strong>
+                  <img
+                    src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/star-yellow.svg"
+                    alt="star" class="img-fluid"> 5.0
+                </strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+
+</html>
